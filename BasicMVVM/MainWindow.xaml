@@ -9,10 +9,12 @@
     <Grid>
         <Button Command="{Binding SetTextCommand}" Content="Change Title" Name="cmdSetTitle" Margin="0,0,0,270" />
         <Button Command="{Binding AddItemCommand}" Content="Add Item" Name="cmdAddItem" Margin="0,50,0,220" />
-        <ComboBox DisplayMemberPath="Name" ItemsSource="{Binding Items}" Name="cmbItems" Margin="0,158,0,108" 
+        <ComboBox DisplayMemberPath="Name" ItemsSource="{Binding Items}" Name="cmbItems" Margin="0,158,319,108" 
                   SelectedValuePath="Value"
                   SelectedItem="{Binding SelectedItem}"
                   />
-        <TextBlock Name="textBlock1" Text="{Binding SelectedItem.Name}" Margin="0,228,0,39"/>
+        <TextBlock Name="textBlock1" Text="{Binding SelectedItem.Name}" Margin="200,159,0,108"/>
+        <Button Command="{Binding ShowYesNoQuestionCommand}" Content="Show Question" Margin="0,254,331,0" />
+        <TextBlock Text="{Binding Answer}" Margin="191,254,0,0" />
     </Grid>
 </Window>
